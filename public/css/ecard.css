@@ -1,0 +1,172 @@
+/* Ecard Clone Design System - Exact 100% */
+:root {
+    --e-navy: #052542;
+    --e-gold: #FFC107;
+    --e-white: #FFFFFF;
+    --e-black: #000000;
+    --e-grey: #9E9E9E;
+    --font-main: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--e-black);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header precise styles */
+.e-top {
+    background: var(--e-navy);
+    height: 30px;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.e-header {
+    background: #fff;
+    padding: 10px 0;
+    transition: all 0.3s;
+}
+
+.e-header.uk-active {
+    background: var(--e-navy) !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.e-header.uk-active .uk-navbar-nav > li > a {
+    color: #fff;
+}
+
+.e-header.uk-active .brand {
+    color: var(--e-gold);
+}
+
+.brand {
+    font-weight: 900;
+    font-size: 24px;
+    color: var(--e-navy);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Buttons precise */
+.btn-gold {
+    background-color: var(--e-gold) !important;
+    color: #000 !important;
+    border-radius: 25px !important;
+    padding: 8px 25px !important;
+    font-weight: 700 !important;
+    border: none !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.btn-outline-white {
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    border-radius: 25px !important;
+    padding: 8px 25px !important;
+    font-weight: 700 !important;
+}
+
+/* Form precise */
+.e-lead .form .wrapper {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.form .name {
+    border-left: 5px solid var(--e-navy);
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--e-navy);
+}
+
+.filter .form .name {
+    border-left-color: #fff;
+    color: #fff;
+}
+
+.mt15 { margin-top: 15px; }
+.mt25 { margin-top: 25px; }
+
+/* Hero Section precise */
+.e-hero {
+    background: var(--e-navy);
+    padding: 100px 0;
+    color: #fff;
+    overflow: hidden;
+}
+
+.e-hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Footer precise */
+.e-footer {
+    background: var(--e-navy);
+    color: #fff;
+    padding: 60px 0 0;
+}
+
+.e-footer .social a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.e-footer .social a:hover {
+    background: var(--e-gold);
+    border-color: var(--e-gold);
+    color: #000;
+}
+
+.e-copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* UIkit Overrides for precise look */
+.uk-navbar-nav > li > a {
+    color: var(--e-navy);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.uk-input, .uk-select, .uk-textarea {
+    border: 1px solid var(--e-grey) !important;
+    border-radius: 0 !important;
+    height: 40px;
+}

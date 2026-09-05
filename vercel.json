@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "framework": null,
+  "outputDirectory": "public",
+  "regions": ["sin1"],
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.6.2"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(css|js|assets|images|build|storage|vendor|favicon\\.ico|favicon\\.png|robots\\.txt)(.*)",
+      "dest": "/public/$1$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
+  ],
+  "env": {
+    "APP_NAME": "ECard",
+    "APP_ENV": "production",
+    "APP_DEBUG": "false",
+    "APP_KEY": "base64:XZvnaF2xkKl/rXxUisLPBVx2Fi7qe9jUiPAC4h7SxKc=",
+    "APP_CONFIG_CACHE": "/tmp/config.php",
+    "APP_EVENTS_CACHE": "/tmp/events.php",
+    "APP_PACKAGES_CACHE": "/tmp/packages.php",
+    "APP_ROUTES_CACHE": "/tmp/routes.php",
+    "APP_SERVICES_CACHE": "/tmp/services.php",
+    "VIEW_COMPILED_PATH": "/tmp/storage/framework/views",
+    "CACHE_DRIVER": "array",
+    "SESSION_DRIVER": "cookie",
+    "LOG_CHANNEL": "stderr",
+    "DB_CONNECTION": "pgsql",
+    "DB_HOST": "aws-0-ap-southeast-1.pooler.supabase.com",
+    "DB_PORT": "5432",
+    "DB_DATABASE": "postgres",
+    "DB_USERNAME": "postgres.bkhggobzermayorsyqce",
+    "DB_SSLMODE": "require"
+  }
+}
